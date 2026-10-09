@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 /*navbar*/
 #nav {
@@ -88,12 +88,14 @@ button {
 
  /*mainpage*/
 #profile{
-background: radial-gradient(circle, rgb(246, 228, 228) 0%, rgb(220, 219, 167) 30%,#ffedab 100%);
-  height: 666px;
-  width: 1512px;
+  background: radial-gradient(circle, rgb(246, 228, 228) 0%, rgb(220, 219, 167) 30%,#ffedab 100%);
+  min-height: 666px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  position: relative;
+  overflow: hidden;
 }
 
 .name1{
@@ -109,7 +111,7 @@ background: radial-gradient(circle, rgb(246, 228, 228) 0%, rgb(220, 219, 167) 30
     width: 50px; /* Adjust width as needed */
     border: none;
     border-top: 2px solid  #4f6815; /* Adjust line style as needed */
-    margin-top: 123px; /* Adjust spacing as needed */
+    top: 194px; /* Adjust spacing as needed */
     margin-left: 340px;
     position: absolute;
 }
@@ -118,19 +120,17 @@ background: radial-gradient(circle, rgb(246, 228, 228) 0%, rgb(220, 219, 167) 30
   width: 50px;
   border: none;
   border-top: 2px solid #4f6815;
-  margin-top: 123px;
+  top: 194px;
   margin-right: 370px;
   position: absolute;
 }
 .portfolio{
   position: absolute;
   top: 230px;
-  letter-spacing: px;
-  font-size: 170px;
+  font-size: clamp(55px, 11vw, 170px);
   color: #75070c;
   font-family:"playfair display",Georgia,serif;
   font-weight: 700;
-  letter-spacing: 0pxpx;
 }
 
 .tech-stack {
@@ -156,7 +156,7 @@ background: radial-gradient(circle, rgb(246, 228, 228) 0%, rgb(220, 219, 167) 30
     width: 100px; /* Adjust width as needed */
     border: none;
     border-top: 5px solid  #4f6815; /* Adjust line style as needed */
-    margin-top: 340px; /* Adjust spacing as needed */
+    top: 410px; /* Adjust spacing as needed */
     position: absolute;
     border-radius: 13%;
 }
@@ -164,7 +164,7 @@ background: radial-gradient(circle, rgb(246, 228, 228) 0%, rgb(220, 219, 167) 30
 #name2{
   color: #4f6815;
   position: absolute;
-  margin-top: 359px;
+  top: 430px;
 }
 
 .inner-ring {
@@ -201,15 +201,17 @@ background: radial-gradient(circle, rgb(246, 228, 228) 0%, rgb(220, 219, 167) 30
 .home {
     background-color: #efe7ca;
     height: 720px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 80px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+    padding: 60px 8%;
+  }
 
 .homeleft {
-    width: 450px;
+    width: 45%px;
     height: 500px;
     display: flex;
     align-items: center;
@@ -230,7 +232,7 @@ background: radial-gradient(circle, rgb(246, 228, 228) 0%, rgb(220, 219, 167) 30
 }
 
 .homeright {
-    width: 600px;
+    width: 45%px;
 }
 
 #opentowork {
@@ -263,10 +265,10 @@ background: radial-gradient(circle, rgb(246, 228, 228) 0%, rgb(220, 219, 167) 30
 
 .homebuttons {
     display: flex;
-    gap: 10px;
+    gap: 35px;
     justify-content: flex-end;
-    margin-top: 20px;
-    margin-right: 350px;
+    margin-top: 30px;
+    margin-right: 600px;
 }
 
 .homebuttons button:first-child {
@@ -282,23 +284,24 @@ background: radial-gradient(circle, rgb(246, 228, 228) 0%, rgb(220, 219, 167) 30
 
 /* about page */
 .about{
-  background-color: #fafaf8;
-  height: 600px;
-  width: 75%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items:flex-start;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  border-top: 2px solid #fcf0f1;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-left:150px ;
+   background-color: #fafaf8;
+    width: 90%;
+    max-width: 1200px;
+    min-height: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 .line{
- margin-top:30px;
- line-height: 1.6;
+    flex: 1;
+    min-width: 0;
+    line-height: 1.6;
  }
 
  .sideline4{
@@ -323,7 +326,7 @@ background: radial-gradient(circle, rgb(246, 228, 228) 0%, rgb(220, 219, 167) 30
   font-family:'playfair display',georgia,serif;
   font-size:34.5px;
   margin-top:25px;
-  margin-left:15px;
+  margin-left: 25px 0 10px 15px;
  }
 
 .wavy-title{
@@ -331,8 +334,7 @@ background: radial-gradient(circle, rgb(246, 228, 228) 0%, rgb(220, 219, 167) 30
   border-top:7px solid #4f6815;
   width: 110px;
   border-radius: 0%;
-  margin-left:15px;
-  margin-top:10px;
+  margin: 10px 0 20px 15px;
 }
 
 
@@ -341,6 +343,7 @@ background: radial-gradient(circle, rgb(246, 228, 228) 0%, rgb(220, 219, 167) 30
   font-size:16px;
   font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
   margin-left:15px;
+  overflow-wrap: anywhere;
 }
 
 .red{
@@ -348,56 +351,78 @@ background: radial-gradient(circle, rgb(246, 228, 228) 0%, rgb(220, 219, 167) 30
   font-weight:500;
 }
 
-.box1{
-  height:100px;
-  width:100px;
-  background-color:white;
-  text-align:center;
-  display:flex;
-  align-self:flex-end;
-  justify-content:center;
-  margin-top:-190px;
-  margin-right:350px;
-  border:0.5px solid black;
-  margin-bottom:100px;
-  border-radius:10%;
-  color:#5f5a50;
-  flex-direction:column;
+/* STATS CONTAINER */
+.stats {
+    flex: 0 0 360px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
 
-.box2{
-  height:100px;
-  width:100px;
-  background-color:white;
-  text-align:center;
-  display:flex;
-  align-self:flex-end;
-  justify-content:center;
-  margin-top:-200px;
-  margin-right:200px;
-  border:0.5px solid black;
-  margin-bottom:100px;
-  border-radius:10%;
-  color:#5f5a50;
- flex-direction:column;
+.box1,.box2,.box3{
+   width: 110px;
+    min-height: 125px;
+    padding: 12px 8px;
+    background-color: white;
+    border: 1px solid #888;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+.colour1, .colour2, .colour3 { 
+  font-size: 30px; 
+  font-weight: 600; 
+  margin: 0 0 5px;
+ } 
+ .colour1, .colour2 { 
+  color: #4f6815; 
+} 
+.colour3 { 
+  color: #75070c; 
 }
 
-.box3{
-  height:100px;
-  width:100px;
-  background-color:white;
-  text-align:center;
-  display:flex;
-  align-self:flex-end;
-  justify-content:center;
-  margin-top:-200px;
-  margin-right:50px;
-  border:0.5px solid black;
-  margin-bottom:100px;
-  border-radius:10%;
-  color:#5f5a50;
-   flex-direction:column;
+/* MOBILE ABOUT LAYOUT */
+@media (max-width: 768px) {
+    .about {
+        width: 95%;
+        min-height: auto;
+        margin: 40px auto;
+        padding: 20px;
+
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .stats {
+        flex: auto;
+        width: 100%;
+    }
+
+    .box1,
+    .box2,
+    .box3 {
+        flex: 1 1 100px;
+    }
+
+    #about1 {
+        font-size: 28px;
+    }
+
+    #about2 {
+        font-size: 15px;
+    }
+
+    #about1 br,
+    #about2 br {
+        display: none;
+    }
 }
+
 
 .colour1{
   color:#4f6815;
@@ -421,5 +446,429 @@ background: radial-gradient(circle, rgb(246, 228, 228) 0%, rgb(220, 219, 167) 30
   font-size:30px;
   margin-top:-9px;
 }
+ 
+/* phone */
+@media (max-width: 768px) {
 
- /*<!-- skills section -->
+    /* NAVBAR */
+    #nav {
+        height: auto;
+        min-height: 70px;
+        padding: 15px 20px;
+        flex-wrap: wrap;
+    }
+
+    #name {
+        position: static;
+        width: auto;
+    }
+
+    .links {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 15px;
+    }
+
+    .links button {
+        position: static;
+    }
+
+
+    /* PROFILE */
+
+    #profile {
+        min-height: 550px;
+    }
+
+    .portfolio {
+        font-size: clamp(55px, 16vw, 100px);
+        top: 220px;
+        text-align: center;
+    }
+
+    .name1 {
+        top: 150px;
+        font-size: 14px;
+    }
+
+    .inner-ring {
+        width: 250px;
+        height: 250px;
+    }
+
+    .outer-ring {
+        width: 380px;
+        height: 380px;
+    }
+
+
+    /* HOME */
+
+    .home {
+        flex-direction: column;
+        height: auto;
+        padding: 60px 20px;
+        gap: 40px;
+    }
+
+    .homeleft {
+        width: 100%;
+    }
+
+    .homeright {
+        width: 100%;
+        text-align: center;
+    }
+
+    .photo {
+        width: min(330px, 90%);
+        height: 370px;
+    }
+
+    #hi {
+        font-size: clamp(40px, 10vw, 58px);
+    }
+
+    .homebuttons {
+        justify-content: center;
+        margin: 20px 0 0;
+    }
+
+
+    /* ABOUT */
+
+    .about {
+        width: 90%;
+        height: auto;
+        margin: 60px auto;
+        padding: 20px;
+    }
+
+    #about1 {
+        font-size: 30px;
+    }
+
+    #about2 {
+        font-size: 15px;
+    }
+
+    #about2 br {
+        display: none;
+    }
+
+    .box1,
+    .box2,
+    .box3 {
+        position: static;
+        margin: 15px auto;
+        align-self: center;
+    }
+}
+
+
+
+  /* skills section  */
+   
+.skills {
+    width: 90%;
+    max-width: 1400px;
+    margin: 100px auto;
+    padding:  30px 0 0 95px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+
+ .skill1{
+  display: block;
+  width: 100%;
+ }
+
+ .sideline5{
+  border:none;
+  border-top:3px solid #75070c;
+  width: 27px;
+  border-radius: 20%;
+  margin-left:35px ;
+}
+
+
+.skill2{
+  color:#3e5408;
+  font-size: 20px;
+  margin:-15px 0 0 70px;
+ 
+}
+#skill3{
+  color: #75070c;
+  font-size: 34.5px;
+  font-family:"playfair display", georgia,serif;
+  margin: 25px 0px 0px 10px;
+}
+/* .sideline6{
+  border-top:7px solid #3e5408 ;
+  width: 110px;
+  margin: 10px 0px 0px 10px;
+} */
+
+.skills > .ring{
+width: 500px;
+height: 450px;
+background-color: #faf7f1;
+border: 1px solid #f4e6bf;
+border-radius: 30px;
+position: relative;
+margin-top:0 ;
+flex-shrink: 0;
+}
+.num1{
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  color: #82915a;
+  font-weight: bold;
+}
+
+.orbit {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.stack {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #a91920;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+/* First orbit ring */
+.r1 {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border: 0.1px solid #eee5d1;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotateClockwise 22s linear infinite;
+}
+
+.rs, .js, .ts, .nx {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+.rs {
+    top: -15px;
+    left: 90px;
+    font-size: 24px;
+}
+
+.js {
+    top: 90px;
+    right: -15px;
+    background-color:yellow;
+}
+
+.ts {
+    bottom: -15px;
+    left: 90px;
+    background-color: rgb(79, 152, 247);
+    color: white;
+}
+
+.nx {
+    top: 90px;
+    left: -15px;
+    background-color: green;
+    color: black;
+}
+
+ @keyframes rotateClockwise {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+} 
+
+
+.r2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 330px;
+    width: 330px;
+    border: 1px solid #eee5d1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotateanticlockwise 22s linear infinite ;
+}
+.fig, .html, .css,.tw{
+  height: 30px;
+  width: 30px;
+  background-color: #75070c;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  border-radius: 11%;
+}
+
+.fig {
+    top: -15px;
+    left: 125px;
+    background-color: lightgreen;
+    color: white;
+}
+
+.html {
+    top: 125px;
+    right: -15px;
+    background-color: orange;
+}
+
+.css {
+    bottom: -15px;
+    left: 125px;
+    background-color:lightseagreen;
+    color: white;
+}
+
+.tw {
+    top: 125px;
+    left: -15px;
+    background-color: #ec989c;
+}
+
+@keyframes rotateanticlockwise{
+  from{
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to{
+  transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+ /* =========================
+   SKILLS 02 - PERCENTAGES
+   ========================= */
+
+.container {
+    width: 550px;
+    height: 200px;
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    position: relative;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.num2 {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: #82915a;
+    font-weight: bold;
+}
+
+.o2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    width: 90%;
+}
+
+/* All four circles */
+
+.container1,
+.container2,
+.container3,
+.container4 {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    border: 8px solid #eee5d1;
+
+    color: #75070c;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Percentage circle */
+
+.container1 {
+    border-top-color: #4f6815;
+    border-right-color: #4f6815;
+    border-bottom-color: #75070c;
+}
+
+.container2 {
+    border-top-color: #4f6815;
+    border-right-color: #4f6815;
+    border-bottom-color: #75070c;
+}
+
+.container3 {
+    border-top-color: #4f6815;
+    border-right-color: #4f6815;
+    border-bottom-color: #75070c;
+}
+
+.container4 {
+    border-top-color: #4f6815;
+    border-right-color: #4f6815;
+    border-bottom-color: #75070c;
+}
+
+/* Skill name underneath */
+
+.container1 span,
+.container2 span,
+.container3 span,
+.container4 span {
+    position: absolute;
+    top: 115px;
+
+    width: 120px;
+
+    text-align: center;
+
+    color: #4a463f;
+    font-size: 14px;
+    font-weight: normal;
+}
