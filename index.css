@@ -578,7 +578,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    gap: 40px;
+    gap: 20px;
 }
 
 
@@ -863,12 +863,161 @@ flex-shrink: 0;
 .container4 span {
     position: absolute;
     top: 115px;
-
     width: 120px;
-
     text-align: center;
-
     color: #4a463f;
     font-size: 14px;
     font-weight: normal;
 }
+                   /* 03 */
+
+.code {
+    background-color: #0f1113;
+    position: relative;
+    width: 225px;
+    min-height: 10px;
+    margin-left: 540px;
+    margin-top: -250px;
+    display: flex;
+    border-radius: 30px;
+    flex-direction: column;
+}
+.num3{
+    color: #cce2f3;
+    font-weight: bold;
+    position: absolute;
+    top: 8px;
+    right: 25px;
+}
+.code .dot{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 12px;
+    gap: 6px;
+}
+
+.code .dot1{
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #f24138;
+}
+.code .dot2{
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: rgb(255, 102, 0);;
+}
+.code .dot3{
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: rgb(64, 238, 64);
+}
+
+
+.code pre {
+    margin: 13px 0 0 -35px;
+    color: #ffffff;
+    font-family: Consolas, monospace;
+    font-size: 13.30px;
+    line-height: 1.8;
+    white-space: pre;
+    /* background-color: #ddd2bd; */
+}
+.c{
+    color:#c678dd;
+}
+.s{
+    color: #61afef;
+}
+.f{
+    color: #98c379;
+}
+.r{
+    color: #98c379;
+}
+.ui{
+    color: #98c379;
+}
+.i{
+    color: #e5c07b;
+}
+.a{
+    color: #5c6370;
+}
+.t{
+    color: #e5c07b;
+}
+
+                 /* 04 */
+.o4{
+   color: #ffedab;
+   width: 225px;
+   min-height: 228px;
+   background-color: #4f6815;
+   border-radius: 33px;
+   flex-direction: column;
+   margin-top: -250px;
+   position: relative;
+}
+.num4{
+    color:#ffedab;
+    font-weight: bold;
+    position: absolute;
+    top:9px;
+    right: 25px; 
+    
+}
+.box12{
+    margin-top:25px;
+    padding-left: 20px;
+}
+.n4{
+  font-size: 70px;
+  font-weight:700;
+}
+.te{
+    color: white;
+}
+ 
+                                /* o5 */
+.o5{
+/* background-color: #61afef; */
+width: 500px;
+min-height: 150px;
+border-radius: 30px;
+position: relative;
+border: 1px solid grey;
+ }
+ .num5{
+    position: absolute;
+    left: 460px;
+    top: 10px;
+    color: #4f6815;
+ }
+
+ .o5 pre{
+    position: absolute;
+    top: 26px;
+    color: #5f5a50;
+    font-size: 13px;
+    line-height: 1.3;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .al{
+    color: #75070c;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: "plafair display", Georgia, serif;
+ }
+ .tools{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 16px 0 0;
+    gap: 8px;
+    top: 70px;
+    background-color: #d9ed9f;
+    color: #75070c;
+ }
