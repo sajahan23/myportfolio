@@ -342,7 +342,7 @@ button {
   color:#5f5a50;
   font-size:16px;
   font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
-  margin-left:15px;
+  margin-left:px;
   overflow-wrap: anywhere;
 }
 
@@ -571,10 +571,10 @@ button {
   /* skills section  */
    
 .skills {
-    width: 90%;
-    max-width: 1400px;
-    margin: 100px auto;
-    padding:  30px 0 0 95px;
+    width: 100%;
+    max-width: 1500px;
+    margin: 100px ;
+    padding:  30px 0 95px 95px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -613,15 +613,17 @@ button {
   width: 110px;
   margin: 10px 0px 0px 10px;
 } */
+  
+                         /* 01 */
 
 .skills > .ring{
-width: 500px;
+width: 550px;
 height: 450px;
 background-color: #faf7f1;
 border: 1px solid #f4e6bf;
 border-radius: 30px;
 position: relative;
-margin-top:0 ;
+margin-top:40px;
 flex-shrink: 0;
 }
 .num1{
@@ -772,9 +774,7 @@ flex-shrink: 0;
   }
 }
 
- /* =========================
-   SKILLS 02 - PERCENTAGES
-   ========================= */
+               /* 02  */
 
 .container {
     width: 550px;
@@ -783,10 +783,11 @@ flex-shrink: 0;
     border-radius: 30px;
     position: relative;
     flex-shrink: 0;
-
+    margin-top:40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .num2 {
@@ -803,6 +804,7 @@ flex-shrink: 0;
     justify-content: center;
     gap: 25px;
     width: 90%;
+    top: 20px;
 }
 
 /* All four circles */
@@ -813,17 +815,12 @@ flex-shrink: 0;
 .container4 {
     width: 100px;
     height: 100px;
-
     border-radius: 50%;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     position: relative;
-
     border: 8px solid #eee5d1;
-
     color: #75070c;
     font-size: 18px;
     font-weight: bold;
@@ -862,7 +859,7 @@ flex-shrink: 0;
 .container3 span,
 .container4 span {
     position: absolute;
-    top: 115px;
+    top: 108px;
     width: 120px;
     text-align: center;
     color: #4a463f;
@@ -876,7 +873,7 @@ flex-shrink: 0;
     position: relative;
     width: 225px;
     min-height: 10px;
-    margin-left: 540px;
+    margin-left: 610px;
     margin-top: -250px;
     display: flex;
     border-radius: 30px;
@@ -981,18 +978,20 @@ flex-shrink: 0;
     color: white;
 }
  
-                                /* o5 */
+                                /* 05 */
+  
 .o5{
 /* background-color: #61afef; */
-width: 500px;
-min-height: 150px;
+width: 550px;
+min-height: 190px;
 border-radius: 30px;
 position: relative;
 border: 1px solid grey;
+padding: 20px;
  }
  .num5{
     position: absolute;
-    left: 460px;
+    right: 30px;
     top: 10px;
     color: #4f6815;
  }
@@ -1017,7 +1016,111 @@ border: 1px solid grey;
     flex-wrap: wrap;
     margin: 16px 0 0;
     gap: 8px;
-    top: 70px;
-    background-color: #d9ed9f;
-    color: #75070c;
+    margin-top: 70px;
  }
+.tools > div {
+    background-color: #f6f7fa;
+    color: #9d1e25;
+    padding: 8px 8px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+                         /* 06 */
+.o6{
+    width: 510px;
+    min-height: 190px;
+    border-radius: 30px;
+    position: relative;
+    border: 1px solid grey;
+    padding: 20px 32PX;
+    left: 23px;
+}  
+.num6{
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  color: #4f6815;
+}      
+ div>h2{
+    color: #75070c;
+    margin-top: 16.8px;
+}      
+div pre{
+    color: #5f5a50;
+    font-size: 13.6px;
+    font-family:"segoe UI",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 9px;
+} 
+
+.tool{
+    display: flex;
+    background-color:transparent;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    /* border-radius: 33px; */
+}
+.tool > div{
+    padding: 10px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.tool1 {
+    background-color: #ffeaa0;
+    color: #75070c;
+    border-radius: 30px;    
+}
+/* Code */
+.tool2 {
+    background-color: #4f6815;
+    color: #ffffff;
+    border-radius: 30px;  
+}
+
+/* Test */
+.tool3 {
+    background-color: #75070c;
+    color: #ffffff;
+    border-radius: 30px;  
+}
+
+/* Deploy */
+.tool4 {
+    background-color: #111111;
+    color: #ffffff;
+    border-radius: 20px;  
+}
+
+                    /* tricker */
+.ticker{
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.ticker-track{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    width: max-content;
+    animation: movetech 12s linear infinite;
+    margin-top: 40px;
+    color: #d5d9e3;
+    font-size: 22px;
+}
+.ticker-track span{
+    font-size: 28px;
+    font-weight: bold;
+    color: #d5d9e3; 
+}
+@keyframes movetech{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
