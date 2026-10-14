@@ -568,7 +568,7 @@ button {
 
 
 
-  /* skills section  */
+ /* skills section  */
    
 .skills {
     width: 100%;
@@ -1133,7 +1133,8 @@ div pre{
     }
 }
 
-                      /* projects */
+
+  /* projects */
 
 #project{
    background-color: #fcfefe;
@@ -1285,4 +1286,3 @@ div pre{
     margin-top: 20px;
     font-size: 15px;
 } 
-
