@@ -1,0 +1,304 @@
+
+@media (max-width: 900px) {
+    .skills {
+        width: 92%;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+        padding: 30px 0 0;
+    }
+
+    .skills > .skill1,
+    .skills > .ring,
+    .skills > .container,
+    .skills > .code,
+    .skills > .o4,
+    .skills > .o5,
+    .skills > .o6,
+    .skills > .ticker {
+        grid-column: 1 / -1;
+        grid-row: auto;
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* 01 — orbit card */
+    .skills > .ring {
+        height: clamp(300px, 42vw, 380px);
+        min-height: 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+    /* Give the orbit its own square area.
+       This keeps both rings centered together. */
+    .skills > .ring > .orbit {
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        top: 50%;
+        left: 50%;
+        right: auto;
+        bottom: auto;
+        inset: auto;
+        transform: translate(-50%, -50%) scale(0.82);
+        transform-origin: center center;
+    }
+
+    /* Keep the other cards inside their own rows */
+    .skills > .container,
+    .skills > .code,
+    .skills > .o4,
+    .skills > .o5,
+    .skills > .o6 {
+        height: auto;
+        min-height: 0;
+    }
+
+    .skills > .container {
+        padding: 35px 14px 50px;
+    }
+
+    .skills .code pre,
+    .skills .o5 pre,
+    .skills .o6 pre {
+        max-width: 100%;
+        white-space: pre-wrap;
+        overflow-wrap: anywhere;
+    }
+}
+
+@media (max-width: 600px) {
+    .skills {
+        width: 92%;
+        gap: 16px;
+        margin: 55px auto;
+    }
+
+    .skills #skill3 {
+        font-size: clamp(23px, 6vw, 30px);
+        line-height: 1.25;
+        overflow-wrap: break-word;
+    }
+
+    /* 01 card shrinks with the screen */
+    .skills > .ring {
+        height: clamp(230px, 68vw, 300px);
+        min-height: 0;
+        border-radius: 24px;
+    }
+
+    /* Shrink both rotating rings and their icons */
+    .skills > .ring > .orbit {
+        width: 350px;
+        height: 350px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.62);
+        transform-origin: center center;
+    }
+
+    .skills .stack {
+        width: 72px;
+        height: 72px;
+        font-size: 13px;
+    }
+
+    .skills .rs,
+    .skills .js,
+    .skills .ts,
+    .skills .nx,
+    .skills .fig,
+    .skills .html,
+    .skills .css,
+    .skills .tw {
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
+    }
+
+    .skills .rs {
+        font-size: 20px;
+    }
+
+    .skills > .ring > .num1 {
+        top: 12px;
+        right: 14px;
+        font-size: 12px;
+    }
+
+    /* Percentage card */
+    .skills > .container {
+        padding: 30px 10px 48px;
+        border-radius: 24px;
+    }
+
+    .skills .o2 {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-items: center;
+        align-items: start;
+        gap: 36px 8px;
+    }
+
+    .skills .container1,
+    .skills .container2,
+    .skills .container3,
+    .skills .container4 {
+        width: 66px;
+        height: 66px;
+        border-width: 6px;
+        font-size: 13px;
+    }
+
+    .skills .container1 span,
+    .skills .container2 span,
+    .skills .container3 span,
+    .skills .container4 span {
+        width: 90px;
+        top: calc(100% + 7px);
+        font-size: 11px;
+        text-align: center;
+        white-space: normal;
+    }
+
+    /* All remaining cards */
+    .skills > .code,
+    .skills > .o4,
+    .skills > .o5,
+    .skills > .o6 {
+        padding: 20px;
+        border-radius: 24px;
+    }
+
+    .skills .code pre,
+    .skills .o5 pre,
+    .skills .o6 pre {
+        font-size: 11px;
+        line-height: 1.6;
+        overflow-wrap: anywhere;
+        white-space: pre-wrap;
+    }
+
+    .skills .n4 {
+        font-size: clamp(42px, 12vw, 56px);
+    }
+
+    .skills .te {
+        font-size: clamp(21px, 6vw, 26px);
+    }
+
+    .skills .tools {
+        gap: 7px;
+    }
+
+    .skills .tools > div,
+    .skills .tool > div {
+        max-width: 100%;
+        padding: 7px 9px;
+        font-size: 12px;
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .skills .tool {
+        gap: 7px;
+    }
+
+    .skills > .ticker {
+        overflow: hidden;
+    }
+
+    .skills .ticker-track {
+        gap: 22px;
+        margin-top: 20px;
+    }
+
+    .skills .ticker-track span {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 380px) {
+    .skills {
+        width: 94%;
+        gap: 14px;
+    }
+
+    .skills > .ring {
+        height: 225px;
+    }
+
+    .skills > .ring > .orbit {
+        transform: translate(-50%, -50%) scale(0.52);
+    }
+
+    .skills > .code,
+    .skills > .o4,
+    .skills > .o5,
+    .skills > .o6 {
+        padding: 15px;
+    }
+
+    .skills .container1,
+    .skills .container2,
+    .skills .container3,
+    .skills .container4 {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+                                                                        /* FIXED OVERLAP */
+
+/* SKILLS */
+@media (max-width: 768px) {
+    .sideline5 {
+        margin-left: 10px;
+    }
+
+    .skill2 {
+        margin: -9px 0 0 50px;
+    }
+}
+
+/* ABOUT */
+@media (max-width: 768px) {
+    .sideline4 {
+        margin-left: 0;
+    }
+
+    #p1 {
+        margin: -12px 0 0 40px;
+    }
+}
+
+/* PROJECTS */
+@media (max-width: 768px) {
+    .sideline7 {
+        margin-left: 0;
+    }
+
+    .po {
+        margin: -13px 0 0 40px;
+    }
+}
+
+/* WHY HIRE ME */
+.why-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: -19px;
+    flex-wrap: wrap;
+}
+
+/* CONTACT */
+.contact-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
